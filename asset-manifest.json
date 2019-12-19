@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/infinite-monkey-genetic-algorithm/static/css/main.d693b15b.chunk.css",
+    "main.js": "/infinite-monkey-genetic-algorithm/static/js/main.e688d30d.chunk.js",
+    "main.js.map": "/infinite-monkey-genetic-algorithm/static/js/main.e688d30d.chunk.js.map",
+    "runtime-main.js": "/infinite-monkey-genetic-algorithm/static/js/runtime-main.78160a26.js",
+    "runtime-main.js.map": "/infinite-monkey-genetic-algorithm/static/js/runtime-main.78160a26.js.map",
+    "static/css/2.64a99b10.chunk.css": "/infinite-monkey-genetic-algorithm/static/css/2.64a99b10.chunk.css",
+    "static/js/2.d7bd266a.chunk.js": "/infinite-monkey-genetic-algorithm/static/js/2.d7bd266a.chunk.js",
+    "static/js/2.d7bd266a.chunk.js.map": "/infinite-monkey-genetic-algorithm/static/js/2.d7bd266a.chunk.js.map",
+    "index.html": "/infinite-monkey-genetic-algorithm/index.html",
+    "precache-manifest.59edaef51c5a3c057037b90f411bef86.js": "/infinite-monkey-genetic-algorithm/precache-manifest.59edaef51c5a3c057037b90f411bef86.js",
+    "service-worker.js": "/infinite-monkey-genetic-algorithm/service-worker.js",
+    "static/css/2.64a99b10.chunk.css.map": "/infinite-monkey-genetic-algorithm/static/css/2.64a99b10.chunk.css.map",
+    "static/css/main.d693b15b.chunk.css.map": "/infinite-monkey-genetic-algorithm/static/css/main.d693b15b.chunk.css.map",
+    "static/js/2.d7bd266a.chunk.js.LICENSE": "/infinite-monkey-genetic-algorithm/static/js/2.d7bd266a.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78160a26.js",
+    "static/css/2.64a99b10.chunk.css",
+    "static/js/2.d7bd266a.chunk.js",
+    "static/css/main.d693b15b.chunk.css",
+    "static/js/main.e688d30d.chunk.js"
+  ]
+}
