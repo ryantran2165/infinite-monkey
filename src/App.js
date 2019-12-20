@@ -32,7 +32,9 @@ class App extends Component {
     });
   };
 
-  start = () => {
+  start = e => {
+    e.target.blur();
+
     if (this.state.targetPhrase.length > 0) {
       this.population = new Population(
         this.state.targetPhrase,
@@ -89,7 +91,7 @@ class App extends Component {
           populationSize={this.state.populationSize}
           mutationRate={this.state.mutationRate}
         />
-        <StartButton onStart={this.start} />
+        <StartButton onStart={e => this.start(e)} />
         <Demo
           generationCount={this.state.generationCount}
           bestPhrase={this.state.bestPhrase}

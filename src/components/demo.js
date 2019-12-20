@@ -13,8 +13,8 @@ const Demo = ({
   populationArr
 }) => {
   return (
-    <div className="row justify-content-center pt-5">
-      <div className="col-4 text-right">
+    <div className="row justify-content-center pt-5 pb-5">
+      <div className="col-4">
         <Statistics
           generationCount={generationCount}
           bestPhrase={bestPhrase}
@@ -24,7 +24,7 @@ const Demo = ({
           currentWorstFitness={currentWorstFitness}
         />
       </div>
-      <div className="col-4 text-left">
+      <div className="col-4">
         <PopulationRender populationArr={populationArr} />
       </div>
     </div>

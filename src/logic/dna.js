@@ -22,7 +22,7 @@ class DNA {
 
     // Count matching characters
     for (let i = 0; i < this.genes.length; i++) {
-      if (this.genes[i] == targetPhrase.charAt(i)) {
+      if (this.genes[i] === targetPhrase.charAt(i)) {
         numCharMatch++;
       }
     }
