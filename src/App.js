@@ -5,6 +5,7 @@ import Population from "./logic/population";
 import StartButton from "./components/start-button";
 import Demo from "./components/demo";
 import Inputs from "./components/inputs";
+import GithubCorner from "react-github-corner";
 
 const frameRate = 60;
 
@@ -13,7 +14,7 @@ class App extends Component {
     super(props);
     this.state = {
       targetPhrase: "",
-      populationSize: 500,
+      populationSize: 50,
       mutationRate: 5,
       generationCount: 0,
       bestPhrase: "",
@@ -22,17 +23,17 @@ class App extends Component {
       currentBestFitness: 0,
       currentWorstFitness: 0,
       populationArr: [],
-      isRunning: false
+      isRunning: false,
     };
   }
 
-  updateState = e => {
+  updateState = (e) => {
     this.setState({
-      [e.target.id]: e.target.value
+      [e.target.id]: e.target.value,
     });
   };
 
-  start = e => {
+  start = (e) => {
     e.target.blur();
 
     if (this.state.targetPhrase.length > 0) {
@@ -42,7 +43,7 @@ class App extends Component {
         this.state.mutationRate * 0.01
       );
       this.setState({
-        isRunning: true
+        isRunning: true,
       });
     }
   };
@@ -59,7 +60,7 @@ class App extends Component {
     if (this.state.isRunning) {
       if (this.population.isFinished()) {
         this.setState({
-          isRunning: false
+          isRunning: false,
         });
       }
 
@@ -71,7 +72,7 @@ class App extends Component {
         averageFitness: this.population.getAverageFitness(),
         currentBestFitness: this.population.getCurrentBestFitness(),
         currentWorstFitness: this.population.getCurrentWorstFitness(),
-        populationArr: this.population.getPopulationArr()
+        populationArr: this.population.getPopulationArr(),
       });
     }
   };
@@ -79,19 +80,31 @@ class App extends Component {
   render() {
     return (
       <div className="App container text-center pt-5">
-        <Title text="Infinite Monkey Genetic Algorithm" />
-        <Description
-          text={
-            "Demonstrates the infinite monkey theorem using genetic algorithm.\nEnter your desired phrase, adjust the evolution parameters, and watch your phrase evolve."
-          }
-        />
+        <div className="row">
+          <div className="col">
+            <Title text="Infinite Monkey Genetic Algorithm" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <Description
+              text={
+                "Demonstrates the infinite monkey theorem using genetic algorithm.\nEnter your desired phrase, adjust the evolution parameters, and watch your phrase evolve."
+              }
+            />
+          </div>
+        </div>
         <Inputs
           onChange={this.updateState}
           targetPhrase={this.state.targetPhrase}
-          populationSize={this.state.populationSize}
-          mutationRate={this.state.mutationRate}
+          populationSize={Number(this.state.populationSize)}
+          mutationRate={Number(this.state.mutationRate)}
         />
-        <StartButton onStart={e => this.start(e)} />
+        <div className="row">
+          <div className="col">
+            <StartButton onStart={(e) => this.start(e)} />
+          </div>
+        </div>
         <Demo
           generationCount={this.state.generationCount}
           bestPhrase={this.state.bestPhrase}
@@ -100,6 +113,12 @@ class App extends Component {
           currentBestFitness={this.state.currentBestFitness}
           currentWorstFitness={this.state.currentWorstFitness}
           populationArr={this.state.populationArr}
+        />
+        <GithubCorner
+          href="https://github.com/ryantran2165/infinite-monkey-genetic-algorithm"
+          bannerColor="#222"
+          octoColor="#7fffd4"
+          target="_blank"
         />
       </div>
     );

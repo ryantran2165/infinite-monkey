@@ -10,11 +10,11 @@ const Demo = ({
   averageFitness,
   currentBestFitness,
   currentWorstFitness,
-  populationArr
+  populationArr,
 }) => {
   return (
     <div className="row justify-content-center pt-5 pb-5">
-      <div className="col-4">
+      <div className="col col-12 col-sm-6">
         <Statistics
           generationCount={generationCount}
           bestPhrase={bestPhrase}
@@ -24,8 +24,10 @@ const Demo = ({
           currentWorstFitness={currentWorstFitness}
         />
       </div>
-      <div className="col-4">
-        <PopulationRender populationArr={populationArr} />
+      <div className="col col-12 col-sm-6">
+        <div className="row justify-content-center">
+          <PopulationRender populationArr={populationArr} />
+        </div>
       </div>
     </div>
   );
@@ -38,7 +40,7 @@ Demo.defaultProps = {
   averageFitness: 0,
   currentBestFitness: 0,
   currentWorstFitness: 0,
-  populationArr: []
+  populationArr: [],
 };
 
 Demo.propTypes = {
@@ -48,7 +50,7 @@ Demo.propTypes = {
   averageFitness: PropTypes.number,
   currentBestFitness: PropTypes.number,
   currentWorstFitness: PropTypes.number,
-  populationArr: PropTypes.array
+  populationArr: PropTypes.array,
 };
 
 export default Demo;
