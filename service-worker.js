@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/infinite-monkey-genetic-algorithm/precache-manifest.f48241d48693d45a65def2fb36393cfc.js"
+  "/infinite-monkey-genetic-algorithm/precache-manifest.3299f2eed01bb95c338ed30701e844bb.js"
 );
 
 self.addEventListener('message', (event) => {
