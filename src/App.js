@@ -82,7 +82,7 @@ class App extends Component {
       <div className="App container text-center pt-5">
         <div className="row">
           <div className="col">
-            <Title text="Infinite Monkey Genetic Algorithm" />
+            <Title text="Infinite Monkey" />
           </div>
         </div>
         <div className="row">
@@ -115,7 +115,7 @@ class App extends Component {
           populationArr={this.state.populationArr}
         />
         <GithubCorner
-          href="https://github.com/ryantran2165/infinite-monkey-genetic-algorithm"
+          href="https://github.com/ryantran2165/infinite-monkey"
           bannerColor="#222"
           octoColor="#7fffd4"
           target="_blank"
