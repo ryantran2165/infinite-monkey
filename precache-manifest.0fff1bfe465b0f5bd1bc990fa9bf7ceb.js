@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "978fb4eb3b862fda1a30b38f58bb2b14",
+    "revision": "b661c8043effd46565895b623cfe5a7e",
     "url": "/infinite-monkey/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/infinite-monkey/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "2a15460448d9a93af3e7",
+    "revision": "5243072865c3bbeefc0a",
     "url": "/infinite-monkey/static/css/main.686246ae.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/infinite-monkey/static/js/2.5021a702.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2a15460448d9a93af3e7",
-    "url": "/infinite-monkey/static/js/main.878f8c01.chunk.js"
+    "revision": "5243072865c3bbeefc0a",
+    "url": "/infinite-monkey/static/js/main.a37a933f.chunk.js"
   },
   {
     "revision": "5dc03ade8f2677624cbd",
