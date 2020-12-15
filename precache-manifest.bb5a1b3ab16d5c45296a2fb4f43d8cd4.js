@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b661c8043effd46565895b623cfe5a7e",
+    "revision": "f773901659a7c8eafd3f2b3633baa46b",
     "url": "/infinite-monkey/index.html"
   },
   {
