@@ -4,7 +4,7 @@ import Button from "./components/button";
 import PopulationRender from "./components/population-render";
 import GithubCorner from "react-github-corner";
 
-const frameRate = 60;
+const FRAME_RATE = 60;
 
 class App extends Component {
   constructor(props) {
@@ -44,7 +44,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.timer = setInterval(() => this.update(), 1000 / frameRate);
+    this.timer = setInterval(() => this.update(), 1000 / FRAME_RATE);
   }
 
   componentWillUnmount() {
