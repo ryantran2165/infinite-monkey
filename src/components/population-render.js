@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const COL_THRESHOLD = 25;
 
-const PopulationRender = ({ populationArr }) => {
+const PopulationRender = ({ populationArr, targetPhrase }) => {
   const numCols = Math.ceil(populationArr.length / COL_THRESHOLD);
   const perCol = Math.trunc(populationArr.length / numCols);
   let remainder = populationArr.length % numCols;
@@ -24,7 +24,9 @@ const PopulationRender = ({ populationArr }) => {
           return (
             <div className="row" key={String(i + j)}>
               <div className="col">
-                <h5>{word}</h5>
+                <h5 className={word === targetPhrase ? "font-weight-bold" : ""}>
+                  {word}
+                </h5>
               </div>
             </div>
           );

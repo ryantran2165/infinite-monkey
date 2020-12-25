@@ -161,7 +161,10 @@ class App extends Component {
               </div>
               <div className="col col-12 col-sm-6">
                 <div className="row justify-content-center">
-                  <PopulationRender populationArr={this.state.populationArr} />
+                  <PopulationRender
+                    populationArr={this.state.populationArr}
+                    targetPhrase={this.state.targetPhrase}
+                  />
                 </div>
               </div>
             </div>
