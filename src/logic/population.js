@@ -1,5 +1,7 @@
 import DNA from "./dna";
 
+const TARGET_FITNESS = 1;
+
 class Population {
   /**
    * Creates a population with the specified parameters.
@@ -19,7 +21,6 @@ class Population {
     this.averageFitness = 0;
     this.currentBestFitness = 0;
     this.currentWorstFitness = 0;
-    this.targetFitness = 1; // Should this be const?
 
     // Create the population
     this.population = [];
@@ -61,6 +62,9 @@ class Population {
 
     // Set old population to new population and update statistics
     this.population = newPopulation;
+
+    this.calculateFitness();
+    this.updateStatistics();
   }
 
   /**
@@ -132,7 +136,7 @@ class Population {
    * Evolution is finished when the best fitness equals the target fitness.
    */
   isFinished() {
-    return this.bestFitness >= this.targetFitness;
+    return this.bestFitness >= TARGET_FITNESS;
   }
 
   /**
@@ -188,7 +192,7 @@ class Population {
    * @return {Array} The population as an array of strings.
    */
   getPopulationArr() {
-    return this.population.map(dna => dna.toString());
+    return this.population.map((dna) => dna.toString());
   }
 }
 
